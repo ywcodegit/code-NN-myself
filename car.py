@@ -15,11 +15,11 @@ class car():
         step2 = self.layer2.dot(step1)
         step2 += self.modify2
 
-        self.output = step2
+        self.output = np.exp(step2)#??
 
 cars = []
 for i in range(100):
-    cars.append(car(np.random.random((178, 1))))
+    cars.append(car(2 * np.random.random((178, 1)) - 1))
 
 #game
 import pygame as pg
