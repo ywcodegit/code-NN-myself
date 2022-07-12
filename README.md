@@ -1,2 +1,2 @@
-# code an NN without ML library
-Just NN
+# code NN myself
+Just write an NN
