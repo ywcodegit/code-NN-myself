@@ -16,20 +16,3 @@ class car():
         step2 += self.modify2
 
         self.output = np.exp(step2)#??
-
-cars = []
-for i in range(100):
-    cars.append(car(2 * np.random.random((178, 1)) - 1))
-
-#game
-import pygame as pg
-import sys
-screen = pg.set_mode((500, 500))
-map = pg.load.image("")
-
-while True:
-    for event in pg.event.get():
-        if event.type == pg.QUIT:
-            pg.quit()
-            sys.exit()
-    pg.update()
